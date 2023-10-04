@@ -1,10 +1,10 @@
-M	post-push.log
-Your branch is up to date with 'origin/dev'.
-Switched to branch 'dev'
+error: The following untracked working tree files would be overwritten by checkout:
+	post-push.log
+Please move or remove them before you switch branches.
+Aborting
 From .
  * branch            feature/configuracion-inicial -> FETCH_HEAD
 Already up to date.
 Everything up-to-date
-M	post-push.log
 Your branch is up to date with 'origin/feature/configuracion-inicial'.
-Switched to branch 'feature/configuracion-inicial'
+Already on 'feature/configuracion-inicial'
