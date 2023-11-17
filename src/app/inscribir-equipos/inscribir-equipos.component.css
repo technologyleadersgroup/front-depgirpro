@@ -1,0 +1,104 @@
+svg{
+    color:azure;
+    
+    
+  
+  
+  }
+    .background-image {
+     
+      background-image: url("./imgEscudosEquipos/background.png");
+  
+      height: 100vh;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+    }
+    .background-text{
+      text-align: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+    }
+  .flex-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5%;
+    border: 1px solid white;
+    background: rgb(255, 255, 255);
+     
+  }
+  
+  .caja1{
+  
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 10%;
+      border: 1px solid white;
+      background-color: white;
+      color: black;
+      font-family: 'Courier New', Courier, monospace;
+      font-weight: bold;
+      width: 80px;
+      height: 60px;
+  
+  
+  }
+  .caja2{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 10%;
+      border: 1px solid white;
+      background-color: white;
+      color: black;
+      font-family: 'Courier New', Courier, monospace;
+      font-weight: bold;
+      width: 214px;
+      height: 60px;
+      
+  }
+  .caja3{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 10%;
+      border: 1px solid white;
+      background-color: white;
+      color: black;
+      font-family: 'Courier New', Courier, monospace;
+      font-weight: bold;
+      width: 90px;
+      height: 60px;
+    
+  
+  }
+  .escudo{
+      width: 80%;
+      height: 90%;
+    }
+  
+    .boton {
+  
+      padding: 8px 15px;
+      background-color: #111952;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      justify-content: center;
+      text-align: center;
+  
+    }
+    .boton:hover {
+      background-color: #161e8d;
+    }
+    .boton:active {
+      background-color: #3b4a9c;
+    }
+  

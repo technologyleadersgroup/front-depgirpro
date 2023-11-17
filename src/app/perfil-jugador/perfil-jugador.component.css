@@ -1,0 +1,128 @@
+.img-fluid {
+    max-width: 100%; /* Estirar la imagen al 100% del ancho del contenedor */
+    height: 500px; /* Mantener la proporción de aspecto original de la imagen */
+    display: block; /* Hacer que la imagen sea un elemento de bloque */
+    margin: 0 auto; /* Centrar horizontalmente la imagen en su contenedor */
+  }
+  .img-posicion{
+        
+    position: absolute;
+    bottom: 0%;
+    top: 164px;
+    left: 630px;
+    width: 80px;
+    height: 80px;
+
+}
+
+.img-confi{
+        
+    position: absolute;
+    bottom: 0%;
+    top: 164px;
+    left: 1310px;
+    width: 80px;
+    height: 80px;
+
+}
+  
+  .mi-div {
+    background-color: white; /* Fondo blanco */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno para el contenido (puedes ajustar este valor) */
+    border: 1px solid #ccc; /* Borde con color gris claro (puedes ajustar el color y el grosor) */
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2); /* Sombra suave (opcional) */
+  }
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+form {
+    background-color: #fff;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    position: center;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="number"],
+select,
+textarea,
+input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+select {
+    height: 40px;
+}
+
+input[type="submit"] {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+.container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    width: 1000px;
+    max-width: 800px;
+}
+
+@media (max-width: 480px) {
+    .img-fluid {
+        width: 750px;
+        height: 782px;
+    }
+    .img-posicion{
+        
+        position: absolute;
+        bottom: 0%;
+        top: 150px;
+        left: 25px;
+        width: 100px;
+        height: 100px;
+    
+  }
+  .img-confi{
+        
+    position: absolute;
+    bottom: 0%;
+    top: 150px;
+    left: 672px;
+    width: 100px;
+    height: 100px;
+
+}
+    
+}

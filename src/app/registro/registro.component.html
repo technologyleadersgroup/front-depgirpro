@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body class="">
+
+  <section>
+    <div class="flex min- overflow-hidden justify-center bg-fondo1  pt-8">
+      <div class="flex flex-col">
+          <div class="w-full max-w-xl mx-auto lg:w-96 pt-4 pb-10">
+              <img src="../assets/recursosimg/LogoOriginal.png" alt="Logo" class="w-auto h-auto">
+            </div>
+          <div class="flex flex-col justify-center flex-1 px-4 py-10 sm:px-6 lg:flex-none lg:px-20 xl:px-24 bg-white rounded-t-3xl">
+  
+              <div class="w-full max-w-xl mx-auto lg:w-96">
+                  <h2 class="mt-6 text-3xl font-extrabold text-neutral-600 text-center">Regristarse</h2>
+  
+                  <div class="mt-8">
+                      <div class="mt-6">
+                          <form action="#" method="POST" class="space-y-6">
+                            <div>
+                              <div class="mt-1">
+                                  <input id="primerNombre" name="primerNombre" type="text" autocomplete="name" required="" placeholder="Primer nombre" class="block w-full px-5 py-3 text-base placeholder-gray-400 transition duration-500 ease-in-out transform border border-transparent rounded-lg text-neutral-600 bg-gray-200 focus:outline-none focus:border-transparent focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-300">
+                              </div>
+                          </div>
+                              <div>
+                                  <div class="mt-1">
+                                      <input id="email" name="email" type="email" autocomplete="email" required="" placeholder="Correo@ejemplo.com" class="block w-full px-5 py-3 text-base placeholder-gray-400 transition duration-500 ease-in-out transform border border-transparent rounded-lg text-neutral-600 bg-gray-200 focus:outline-none focus:border-transparent focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-300">
+                                  </div>
+                              </div>
+  
+                              <div class="space-y-1">
+                                  <div class="mt-1">
+                                      <label for="password" class="sr-only">Password</label>
+                                
+                                      <div class="">
+                                        <input
+                                        id="password" name="password" type="password"  autocomplete="current-password" required="" placeholder="contraseña"  class="block w-full px-5 py-3 text-base placeholder-gray-400 transition duration-500 ease-in-out transform border border-transparent rounded-lg text-neutral-600 bg-gray-200 focus:outline-none focus:border-transparent focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-300"
+                                        />
+                                
+                                        
+                                      </div>
+                                    </div>
+                              </div>
+                              <input
+                                        id="ConfirmarPassword" name="ConfirmarPassword" type="password"  autocomplete="current-password" required="" placeholder="Confirma tu contraseña"  class="block w-full px-5 py-3 text-base placeholder-gray-400 transition duration-500 ease-in-out transform border border-transparent rounded-lg text-neutral-600 bg-gray-200 focus:outline-none focus:border-transparent focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-300"
+                                        />
+                              <div>
+                                <div class="mt-1">
+                                    <input id="mobile" name="mobile" type="tel" autocomplete="tel-national" required="" placeholder="Número télefono" class="block w-full px-5 py-3 text-base placeholder-gray-400 transition duration-500 ease-in-out transform border border-transparent rounded-lg text-neutral-600 bg-gray-200 focus:outline-none focus:border-transparent focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-300">
+                                </div>
+                            </div>
+                              <div class="flex items-center justify-between">
+                                  <div class="flex items-center">
+                                      <input id="terminosYcondiciones" name="terminosYcondiciones" type="checkbox" placeholder="Your password" class="w-4 h-4 text-blue-600 border-gray-200 rounded focus:ring-blue-500">
+                                      <label for="remember-me" class="block ml-2 text-sm text-neutral-600">Acepto terminos y condiciones </label>
+                                  </div>
+  
+                                  <div class="text-sm">
+                                      <a  class=" text-gray-600 hover:text-blue-500"> Olvidaste tu contraseña</a>
+                                  </div>
+                              </div>
+  
+                              <div class="space-y-3">
+                                  <div>
+                                      <button type="submit" class="flex items-center justify-center w-full px-10 py-4 text-base font-medium text-center text-gray-600 transition duration-500 ease-in-out transform bg-gray-200 rounded-xl hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 hover:text-white">REGISTRATE</button>
+                                  </div>
+                              </div>
+                          </form>
+                      </div>
+                  </div>
+              </div>
+              </div>
+        </div>
+    </div>
+  </section>
+  <!-- <div class="w-full max-w-xl mx-auto lg:w-96 py-4">
+    <img src="../assets/recursosimg/LogoOriginal.png" alt="Logo" class="w-auto h-auto">
+  </div>
+       
+<form class="container mx-auto pt-10">
+  <div class="relative z-0 w-full mb-6 group">
+      <input type="email" name="floating_email" id="floating_email" class="block py-2.5 px-0 w-full text-sm text-gray-200 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-gray-400 peer" placeholder=" " required />
+      <label for="floating_email" class="peer-focus:font-medium absolute text-sm text-gray-200 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-gray-200 peer-focus: peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Email</label>
+  </div>
+  <div class="relative z-0 w-full mb-6 group">
+      <input type="password" name="floating_password" id="floating_password" class="block py-2.5 px-0 w-full text-sm text-gray-200 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-gray-400 peer" placeholder=" " required />
+      <label for="floating_password" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-200 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-gray-200 peer-focus: peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">contraseña</label>
+  </div>
+  <div class="relative z-0 w-full mb-6 group">
+      <input type="password" name="repeat_password" id="floating_repeat_password" class="block py-2.5 px-0 w-full text-sm text-gray-200 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-gray-400 peer" placeholder=" " required />
+      <label for="floating_repeat_password" class="peer-focus:font-medium absolute text-sm text-gray-200 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-gray-200 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Confirma tu contraseña</label>
+  </div>
+  <div class="grid md:grid-cols-2 md:gap-6">
+    <div class="relative z-0 w-full mb-6 group">
+        <input type="text" name="floating_first_name" id="floating_first_name" class="block py-2.5 px-0 w-full text-sm text-gray-200 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-gray-400 peer" placeholder=" " required />
+        <label for="floating_first_name" class="peer-focus:font-medium absolute text-sm text-gray-200 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-gray-200 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Primer nombre</label>
+    </div>
+    <div class="relative z-0 w-full mb-6 group">
+        <input type="text" name="floating_last_name" id="floating_last_name" class="block py-2.5 px-0 w-full text-sm text-gray-200 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-gray-400 peer" placeholder=" " required />
+        <label for="floating_last_name" class="peer-focus:font-medium absolute text-sm text-gray-200 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-gray-400 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Apellido</label>
+    </div>
+  </div>
+  <div class="grid md:grid-cols-2 md:gap-6">
+    <div class="relative z-0 w-full mb-6 group">
+        <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" name="floating_phone" id="floating_phone" class="block py-2.5 px-0 w-full text-sm text-gray-200 bg-transparent border-0 border-b-2 border-gray-300 appearance-none  focus:outline-none focus:ring-0 focus:border-gray-400 peer" placeholder=" " required />
+        <label for="floating_phone" class="peer-focus:font-medium absolute text-sm text-gray-200 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-gray-200  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Número movil (123-456-7890)</label>
+    </div>
+    <div class="relative z-0 w-full mb-6 group">
+        <input type="text" name="floating_company" id="floating_company" class="block py-2.5 px-0 w-full text-sm text-gray-200 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-gray-400 peer" placeholder=" " required />
+        <label for="floating_company" class="peer-focus:font-medium absolute text-sm text-gray-200 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-gray-200 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">confirma tu movil</label>
+    </div>
+  </div>
+  <div class="flex items-start mb-6">
+    <div class="flex items-center h-5">
+      <input id="remember" type="checkbox" value="" class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300" required>
+      <label for="remember" class="ml-2 text-lg font-semibold text-gray-200">Recordar</label>
+    </div>
+  </div>
+  <div class="flex justify-center">
+    <a href="#" type="submit" class="text-white  bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-20 py-3 text-center">Registrar</a>
+  </div>
+</form> -->
+
+  
+      
+  
+</body>
+</html>
