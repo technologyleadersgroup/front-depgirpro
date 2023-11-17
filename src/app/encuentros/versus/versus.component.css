@@ -1,0 +1,113 @@
+.banner-left{
+    background-color: rgb(236, 236, 236);
+    position: relative;
+    width: 35%;
+    padding: 5px 10px;
+    display: inline-block;
+}
+
+.banner-left::before{
+    content: "";
+    border: 20px solid;
+    border-color: rgb(236, 236, 236) rgba(0,0,0,0) rgba(0,0,0,0) rgba(0,0,0,0);
+    border-top-width: 39px;
+    position: absolute;
+    right: 0;
+    transform: translate(50%, -8%);
+}
+
+.banner-left>.equipo{
+    justify-content: flex-start;
+}
+
+.banner-right{
+    background-color: rgb(236, 236, 236);
+    position: relative;
+    width: 35%;
+    padding: 5px 10px;
+    display: inline-block;
+}
+
+.logo-equipo{
+    max-width: 30px;
+    max-height: 30px;
+}
+
+.banner-right::before{
+    content: "";
+    border: 20px solid;
+    border-color: rgba(0,0,0,0) rgba(0,0,0,0) rgb(236, 236, 236) rgba(0,0,0,0);
+    border-bottom-width: 40px;
+    position: absolute;
+    left: 0;
+    transform: translate(-50% ,-42%);
+}
+
+.banner-right>.equipo{
+    justify-content: flex-end;
+}
+
+.equipo{
+    display: flex;
+    align-items: center;
+}
+
+.banner-right>.equipo>span{
+    z-index: 1;
+    text-align: right;
+}
+.banner-left>.equipo>span{
+    z-index: 1;
+    text-align: left;
+}
+
+.versus{
+    display: inline-block;
+    width: 20%;
+    padding: 0 0px 0;
+    text-align: center;
+}
+
+.versus-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.versus-text{
+    font-weight: bold;
+    font-size: 30px;
+}
+
+/*.equipo>*{
+    height: 100%;
+    align-content: center;
+}*/
+
+.equipo>span{
+    font-weight: bold;
+    font-size: 13px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+@media only screen and (max-width: 460px) {
+    .equipo>span{
+        font-size: 12px;
+    }
+    .banner-right>.equipo>span{
+        /*z-index: 1;*/
+        text-align: right;
+        margin-right: 5px;
+    }
+    .banner-left>.equipo>span{
+        /*z-index: 1;*/
+        text-align: left;
+        margin-left: 5px;
+    }
+    .versus{
+        z-index: 1;
+    }
+}

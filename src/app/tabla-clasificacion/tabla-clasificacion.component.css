@@ -1,0 +1,146 @@
+body {
+    background-image: url("Fondo Azul.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+/* 
+.custom-button {
+    position: absolute;
+    border: none;
+    background: none;
+    width: 80px;
+    top: 10px;
+} */
+
+.contenedor-blanco {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 90%;
+    width: 100%;
+    height: 100%;
+    margin-top: 100px;
+}
+
+.encabezado {
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.logo {
+    width: 200px;
+    margin-right: 20px;
+}
+
+.titulo {
+    font-size: 70px;
+    text-align: center;
+}
+
+.contenedor-blanco table {
+    border-spacing: 500px;
+    width: 100%;
+}
+
+th,
+td {
+    padding: 8px;
+    text-align: center;
+}
+
+td {
+    background-color: #e6e6e6;
+}
+
+h6 {
+    position: relative;
+    bottom: 30px;
+}
+
+td img {
+    width: 40px;
+    margin-top: 18px;
+}
+
+@media (max-width: 768px) {
+    body {
+        background-size: 100% 100%;
+    }
+    .custom-button {
+        position: absolute;
+        border: none;
+        background: none;
+        width: 50px;
+        top: 5px;
+    }
+    .titulo {
+        font-size: 30px;
+    }
+    .logo {
+        width: 100px;
+    }
+    .contenedor-blanco {
+        margin-top: 50px;
+        padding: 5px;
+    }
+    .contenedor-blanco table {
+        border-spacing: 5px;
+        width: 100%;
+        overflow-x: auto;
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-collapse: separate;
+    }
+    .equipos {
+        width: 20px;
+        border-right: 20px;
+        height: 5px;
+    }
+    .puntos {
+        width: 20px;
+        height: 5px;
+    }
+    .pj {
+        width: 20px;
+        height: 5px;
+    }
+    .g {
+        width: 20px;
+        height: 5px;
+    }
+    .e {
+        width: 20px;
+        height: 5px;
+    }
+    .p {
+        width: 20px;
+        height: 5px;
+    }
+    th,
+    td {
+        padding: 0px;
+        text-align: center;
+        border: 0px solid white;
+    }
+    td {
+        height: 10px;
+    }
+    h6 {
+        text-align: left;
+        max-width: 100px;
+        left: 40px;
+        word-wrap: break-word;
+    }
+    td img {
+        width: 30px;
+        margin-top: 18px;
+    }
+}

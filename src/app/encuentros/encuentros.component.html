@@ -1,0 +1,57 @@
+<main>
+    <div>
+        <i class="bi bi-arrow-left icon"></i>
+    </div>
+    <div class="card">
+            <header class="card-title">
+                <div class="logo-torneo">
+                    <img src="./recursosEncuentros/logotorneo.png" alt="Logo del torneo" class="logotorneo">
+                </div>
+                <div class="title-text">
+                    <span class="title">NACIONAL AMATEUR</span>
+                    <p>fecha 18-08</p>
+                </div>
+            </header>
+
+            
+            <div class="Cuartos">
+                <div class="titulos">
+                    <h3>CUARTOS DE FINAL</h3>
+                </div>
+                <app-versus
+                *ngFor="let team of versusList.cuartosFinal"
+                [team1]="team.equipo1.nameteam" [team2]="team.equipo2.nameteam" [escudoTeam1]="team.equipo1.escudo" [escudoTeam2]="team.equipo2.escudo">
+                </app-versus>
+            </div>
+
+            <div class="Semifinales">
+                <div class="titulos">
+                    <h3>SEMIFINAL</h3>
+                </div>
+                    <app-versus
+                    *ngFor="let team of versusList.semifinal"
+                    [team1]="team.equipo1.nameteam" [team2]="team.equipo2.nameteam" [escudoTeam1]="team.equipo1.escudo" [escudoTeam2]="team.equipo2.escudo">
+                    </app-versus>
+            </div>
+
+            <div class="Final">
+                <div class="titulos">
+                    <h3>FINAL</h3>
+                </div>
+                <app-versus
+                    *ngFor="let team of versusList.final"
+                    [team1]="team.equipo1.nameteam" [team2]="team.equipo2.nameteam" [escudoTeam1]="team.equipo1.escudo" [escudoTeam2]="team.equipo2.escudo">
+                </app-versus>
+            </div>
+
+            <div class="Campeon">
+                <div class="titulos">
+                    <h3>CAMPEÓN</h3>
+                </div>
+                <app-campeon
+                    *ngFor="let team of versusList.campeon"
+                    [team1]="team.equipo1.nameteam" [escudoTeam1]="team.equipo1.escudo">
+                </app-campeon>
+            </div>
+    </div>
+</main>
