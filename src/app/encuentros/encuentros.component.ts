@@ -10,7 +10,7 @@ export class EncuentrosComponent {
   versusList= {
     cuartosFinal:[
       {
-        equipo1:{nameteam:"DEPORTES TOLIMA", escudo:"./recursosEncuentros/tolima.png"}, 
+        equipo1:{nameteam:"DEPORTES TOLIMA", escudo:"../assets/escudoEquipos/tolima.png"}, 
         equipo2:{nameteam:"AMERICA", escudo:"./recursosEncuentros/america.png"}
       },
       {
