@@ -14,7 +14,7 @@ import { TablaClasificacionComponent } from './tabla-clasificacion/tabla-clasifi
 import { EncuentrosComponent } from './encuentros/encuentros.component';
 import { VersusComponent } from './encuentros/versus/versus.component';
 // import { CampeonComponent } from './encuentros/campeon/CampeonComponent';
-import { TablaResultadosComponent } from './tabla-resultados/tabla-resultados.component';
+// import { TablaFichajesComponent } from './tabla-fichajes/tabla-fichajes.component';
 import { PerfilJugadorComponent } from './perfil-jugador/perfil-jugador.component';
 import { FichajesComponent } from './fichajes/fichajes.component';
 
@@ -38,7 +38,7 @@ const routes: Routes = [
     EncuentrosComponent,
     VersusComponent,
     // CampeonComponent,
-    TablaResultadosComponent,
+    // TablaFichajesComponent,
     PerfilJugadorComponent,
     FichajesComponent
   ],

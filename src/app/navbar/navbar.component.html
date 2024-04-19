@@ -19,8 +19,8 @@
             </div>
     
             <nav :class="{'flex': open, 'hidden': !open}" class="flex-col items-center flex-grow hidden pb-4 border-blue-600 md:pb-0 md:flex md:justify-end md:flex-row lg:border-l-2 lg:pl-2">
-                <a class="px-4 py-2 mt-2 text-base text-gray-500 md:mt-0 hover:text-blue-600 focus:outline-none focus:shadow-outline" >inicio</a>
-                <a class="px-4 py-2 mt-2 text-base text-gray-500 md:mt-0 hover:text-blue-600 focus:outline-none focus:shadow-outline" >Torneo</a>
+                <a class="px-4 py-2 mt-2 text-base text-gray-500 md:mt-0 hover:text-blue-600 focus:outline-none focus:shadow-outline"  [routerLink]="['/', 'inicio']">inicio</a>
+                <a class="px-4 py-2 mt-2 text-base text-gray-500 md:mt-0 hover:text-blue-600 focus:outline-none focus:shadow-outline" [routerLink]="['/', 'torneo']" >Torneo</a>
                 <div  class="relative" x-data="{ open: false }">
                     <button  (click)="hamburguesa()" class="flex flex-row items-center w-full px-4 py-2 mt-2 text-base text-left text-gray-500 md:w-auto md:inline md:mt-0 hover:text-blue-600 focus:outline-none focus:shadow-outline">
                         <span (click)="hamburguesa()">más</span>
@@ -30,8 +30,8 @@
                     </button>
                     <div *ngIf="isVisible" x-transition:enter="transition ease-out duration-100" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-75" x-transition:leave-start="transform opacity-100 scale-100" x-transition:leave-end="transform opacity-0 scale-95" class="absolute right-0 z-30 w-full mt-2 origin-top-right rounded-md shadow-lg md:w-48" >
                         <div class="px-2 py-2 bg-white rounded-md shadow">
-                            <a class="block px-4 py-2 mt-2 text-base text-gray-500 md:mt-0 hover:text-blue-600 focus:outline-none focus:shadow-outline" [routerLink]="['/','inscribirEquipos']">Inscribir Equipos</a>
-                            <a class="block px-4 py-2 mt-2 text-base text-gray-500 md:mt-0 hover:text-blue-600 focus:outline-none focus:shadow-outline" href="#">Fichajes</a>
+                            
+                            <a  [routerLink]="['/', 'fichajes']" class="block px-4 py-2 mt-2 text-base text-gray-500 md:mt-0 hover:text-blue-600 focus:outline-none focus:shadow-outline" >Fichajes</a>
                             <a class="block px-4 py-2 mt-2 text-base text-gray-500 md:mt-0 hover:text-blue-600 focus:outline-none focus:shadow-outline" href="#">Encuentros</a>
                             <a class="block px-4 py-2 mt-2 text-base text-gray-500 md:mt-0 hover:text-blue-600 focus:outline-none focus:shadow-outline" href="#">Perfil-jugador</a>
                             <a class="block px-4 py-2 mt-2 text-base text-gray-500 md:mt-0 hover:text-blue-600 focus:outline-none focus:shadow-outline" href="#">Tabla de resultados</a>
@@ -41,8 +41,8 @@
                 </div>
     
                 <div  class="inline-flex items-center gap-2 list-none lg:ml-auto">
-                    <button [routerLink]="['/','inicio']" class="items-center block px-10 py-2.5 text-base font-medium text-center text-blue-600 transition duration-500 ease-in-out transform border-2 border-white shadow-md rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">Iniciar sesión</button>
-                    <button [routerLink]="['/','registro']" class="items-center block px-10 py-3 text-base font-medium text-center text-white transition duration-500 ease-in-out transform bg-blue-600 rounded-xl hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">Registrarse</button>
+                    <button [routerLink]="['/', 'login']" class="items-center block px-10 py-2.5 text-base font-medium text-center text-blue-600 transition duration-500 ease-in-out transform border-2 border-white shadow-md rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">Iniciar sesión</button>
+                    <button [routerLink]="['', 'registro']" class="items-center block px-10 py-3 text-base font-medium text-center text-white transition duration-500 ease-in-out transform bg-blue-600 rounded-xl hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">Registrarse</button>
                 </div>
             </nav>
         </div>

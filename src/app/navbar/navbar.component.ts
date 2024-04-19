@@ -9,6 +9,7 @@ export class NavbarComponent {
 
 isVisible: boolean = false; //Inicialmente el elemento no esta oculto
 
+
   hamburguesa(){
     this.isVisible = !this.isVisible; //cambiara el estado
   }
