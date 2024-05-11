@@ -1,3 +1,4 @@
 {
-    "livePreview.defaultPreviewPath": "/src/app/login/login.component.html"
+    "livePreview.defaultPreviewPath": "/src/app/login/login.component.html",
+    "liveServer.settings.port": 5501
 }

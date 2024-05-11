@@ -6,7 +6,8 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "dev": "npx tailwindcss -i ./src/app/tabla-clasificacion/input.css -o ./src/app/tabla-clasificacion/output.css --watch"
   },
   "private": true,
   "dependencies": {
@@ -35,7 +36,7 @@
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
     "postcss": "^8.4.30",
-    "tailwindcss": "^3.3.3",
+    "tailwindcss": "^3.4.3",
     "typescript": "~5.1.3"
   }
 }
