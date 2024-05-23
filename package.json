@@ -7,7 +7,8 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "dev": "npx tailwindcss -i ./src/app/tabla-clasificacion/input.css -o ./src/app/tabla-clasificacion/output.css --watch"
+    "dev": "npx tailwindcss -i ./src/app/tabla-clasificacion/input.css -o ./src/app/tabla-clasificacion/output.css --watch",
+    "encuentros": "npx tailwindcss -i ./src/app/encuentros/input-encuentros.component.css -o ./src/app/encuentros/output-encuentros.component.css --watch"
   },
   "private": true,
   "dependencies": {

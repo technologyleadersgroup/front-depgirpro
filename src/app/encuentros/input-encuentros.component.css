@@ -1,0 +1,66 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+body {
+    @apply bg-[url("../assets/recursosimg/FondoAzul.jpg")] bg-cover bg-no-repeat bg-fixed flex h-full justify-center items-center m-0;
+  }
+.button {
+    /* FLECHA */
+    @apply absolute w-10 border-[none] top-2 md:w-24 md:top-4 lg:w-16
+}
+.card {
+    /* CONTENEDOR BLANCO */
+    @apply bg-[white] max-w-[90%] max-h-[90%] px-3 rounded-2xl h-full mt-[2.9rem] mb-3 md:mt-28 md:max-h-[88%] lg:mt-20 lg:px-6 lg:mb-6
+}  
+.card-title {
+    @apply flex flex-row mt-2 mb-3 content-center md:mb-6 md:mt-3
+}
+.logo-torneo{
+    @apply h-10 w-12 mr-1 md:w-24 md:h-20 md:mx-2 lg:w-16 
+}
+.title {
+    /* NACIONAL AMATEUR */
+    @apply text-[1.6rem] font-bold md:text-[3.6rem] lg:text-[2.7rem]
+}
+p {
+    /* FECHA */
+    @apply text-base font-semibold md:text-xl lg:text-base lg:-mt-2
+}
+h3 {
+    /* CUARTOS / SEMI / FINAL */
+    @apply text-xl font-bold text-center m-1.5 md:text-3xl md:m-4 lg:text-2xl lg:mb-1 lg:mt-2
+}
+.bigbox {
+    @apply flex flex-row content-between place-content-center
+}
+.box-left {
+    @apply flex flex-row w-80 h-10 mr-4 p-2 bg-gradient-to-r from-gray-200 to-white rounded-br-full mb-1
+            md:w-64 md:h-16
+            lg:w-56 lg:h-12
+}
+.box-right {
+    @apply flex flex-row-reverse w-80 h-10  ml-4 p-2 bg-gradient-to-l from-gray-200 to-white rounded-tl-full	
+           md:w-64 md:h-16
+           lg:w-56 lg:h-12
+}
+.box-left img, .box-right img {
+    @apply  w-5 h-6 md:w-10 md:h-12 md:mx-1 lg:w-6 lg:h-8 lg:mx-1
+}
+.versus {
+    @apply bg-white w-10 h-10 text-center place-content-center font-extrabold font-serif md:w-10 md:h-12 md:text-2xl lg:text-xl
+}
+h6 {
+    /* NOMBRE DE LOS EQUIPOS */
+    @apply text-xs m-1 font-bold 
+           md:text-xl md:mx-4 md:mt-2
+           lg:text-[1rem] lg:mt-0.5
+}
+.box-campeon {
+    @apply flex w-full h-10  mx-1 mb-3 p-2 bg-gray-200 rounded-br-full rounded-tl-full place-content-center content-center 
+            md:w-96 md:h-16 md:ml-[10rem]
+            lg:w-56 lg:h-12 lg:mb-4
+}
+.box-campeon img {
+    @apply  w-5 h-6  md:w-10 md:h-12 lg:w-6 lg:h-8 lg:mx-1
+}
