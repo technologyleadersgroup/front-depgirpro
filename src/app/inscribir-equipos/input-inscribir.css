@@ -1,0 +1,36 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+body {
+    @apply bg-[url("../assets/recursosimg/FondoAzul.jpg")] bg-cover bg-no-repeat bg-fixed h-lvh flex justify-center m-0 lg:h-full
+  }
+.button {
+    @apply absolute w-14 border-[none] top-4 left-2 md:w-24 md:top-6 md:left-10 lg:w-16 lg:left-8
+}
+.container {
+    @apply flex flex-col bg-none items-center max-h-[90%] mt-16 md:mt-28 lg:mt-16
+}
+.title {
+    @apply max-w-[90%] h-3 mt-2 text-[2rem] font-bold italic text-white text-center md:text-[3.5rem] md:h-16 lg:text-[2.5rem] lg:h-10
+}
+.card {
+    @apply bg-none px-4 w-full h-full mt-[3rem] md:max-w-[90%] lg:max-w-[60%]
+}  
+.bigbox {
+    @apply flex flex-col
+}
+.equipo {
+    @apply flex flex-row items-center w-full h-16 p-2 bg-white mb-3 md:h-20 md:mb-4 lg:h-14
+}
+.equipo img {
+    @apply  w-8 h-10 mx-2 md:w-12 md:h-14 md:mx-6 lg:w-8 lg:h-10
+}
+h6 {
+    @apply text-xl font-bold md:text-3xl lg:text-xl
+}
+.inscribir {
+    @apply border-solid border-blue-800 bg-blue-800 px-2 absolute right-6 text-white text-lg 
+            md:right-28 md:text-2xl lg:right-80 lg:text-base
+           
+}
