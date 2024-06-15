@@ -3,6 +3,3 @@
 @tailwind components;
 @tailwind utilities;
 
- .bg-fondo1{
-    background-image: url(./assets/recursosimg/FondoAzul.jpg);
- }

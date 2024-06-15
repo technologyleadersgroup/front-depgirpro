@@ -1,0 +1,61 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+body {
+    @apply bg-white bg-cover bg-no-repeat bg-fixed flex h-full justify-center items-center m-0;
+  }
+.container {
+    @apply flex flex-col max-w-[98%] max-h-[98%] text-center
+}
+.flecha {
+    @apply absolute w-20 border-[none] top-4
+}
+.foto {
+    @apply w-full h-1/6
+}
+.foto img {
+    @apply rounded-3xl w-full
+}
+.card {
+    @apply bg-purple-100 w-full h-auto rounded-t-[60px] p-4 absolute top-80
+}
+.title {
+    @apply flex flex-row w-full m-4 text-center
+}
+.nombre {
+    @apply text-5xl font-bold mx-4 w-2/3 
+}
+.pila {
+    @apply flex flex-col w-1/3 items-center
+}
+.escudo img {
+    @apply  w-8 h-10
+}
+.numero {
+    @apply  text-[42px] font-bold
+}
+.informacion {
+    @apply flex flex-col
+}
+.box1, .box3, .box4 {
+    @apply flex flex-row
+}
+.edad, .altura, .peso {
+    @apply border border-solid border-gray-200 w-1/3 bg-gray-100
+}
+.posicion {
+    @apply border border-solid border-gray-200
+}
+.juegos, .victorias {
+    @apply border border-solid border-gray-200 w-1/2 bg-gray-100
+}
+.goles, .atajadas {
+    @apply border border-solid border-gray-200 w-1/2 bg-none
+}
+.asistencias {
+    @apply border border-solid border-gray-200  bg-gray-100
+}
+.contactar {
+    @apply m-4 text-sm bg-blue-900 hover:bg-blue-400 rounded w-32 h-6 text-white font-semibold
+}

@@ -9,7 +9,8 @@
     "test": "ng test",
     "dev": "npx tailwindcss -i ./src/app/tabla-clasificacion/input.css -o ./src/app/tabla-clasificacion/output.css --watch",
     "encuentros": "npx tailwindcss -i ./src/app/encuentros/input-encuentros.component.css -o ./src/app/encuentros/output-encuentros.component.css --watch",
-    "inscribir": "npx tailwindcss -i ./src/app/inscribir-equipos/input-inscribir.css -o ./src/app/inscribir-equipos/output-inscribir.css --watch"
+    "inscribir": "npx tailwindcss -i ./src/app/inscribir-equipos/input-inscribir.css -o ./src/app/inscribir-equipos/output-inscribir.css --watch",
+    "perfil": "npx tailwindcss -i ./src/app/perfil-jugador/input-perfil-jugador.css -o ./src/app/perfil-jugador/output-perfil-jugador.css --watch"
   },
   "private": true,
   "dependencies": {
