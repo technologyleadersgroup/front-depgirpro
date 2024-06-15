@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 
 @Component({
   selector: 'app-navbar',
@@ -14,4 +14,9 @@ isVisible: boolean = false; //Inicialmente el elemento no esta oculto
     this.isVisible = !this.isVisible; //cambiara el estado
   }
  
+  // AL REALIZARliZAR LOS CAMBIOS CON ANGULAR 17 VALIDAR LA SIGUIENTE SINTAXIS 
+  // isVisible = signal(true);
+  // toogleisVisible(){
+  //   this.isVisible.update(prevState => !prevState)
+  // }
 }

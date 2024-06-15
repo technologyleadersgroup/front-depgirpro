@@ -5,6 +5,7 @@ import { RegistroComponent } from './registro/registro.component';
 import { FichajesComponent } from './fichajes/fichajes.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { TorneoComponent } from './torneo/torneo.component';
+import { EncuentrosComponent } from './encuentros/encuentros.component';
 
 const routes: Routes = [
   {
@@ -26,6 +27,10 @@ const routes: Routes = [
   {
     path: 'torneo',
     component: TorneoComponent,
+  },
+  {
+    path: 'encuentros',
+    component: EncuentrosComponent,
   }
 ];
 
