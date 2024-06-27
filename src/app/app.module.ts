@@ -17,6 +17,8 @@ import { VersusComponent } from './encuentros/versus/versus.component';
 // import { TablaFichajesComponent } from './tabla-fichajes/tabla-fichajes.component';
 import { PerfilJugadorComponent } from './perfil-jugador/perfil-jugador.component';
 import { FichajesComponent } from './fichajes/fichajes.component';
+import { HttpClientModule } from '@angular/common/http';
+
 
 const routes: Routes = [
   { path: 'inicio', component: LoginComponent },
@@ -44,6 +46,7 @@ const routes: Routes = [
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     FormsModule,
     AppRoutingModule,
     [RouterModule.forRoot(routes)],
