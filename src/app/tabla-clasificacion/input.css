@@ -1,0 +1,64 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/*
+  Based on TailwindCSS recommendations,
+  consider using classes instead of the `@apply` directive
+  @see https://tailwindcss.com/docs/reusing-styles#avoiding-premature-abstraction
+*/
+body {
+  @apply bg-[url("../assets/escudosEquipos/bg.png")] bg-cover bg-no-repeat bg-fixed flex h-screen justify-center items-center m-0;
+}
+tbody .equipos img {
+  @apply w-4 h-6 ml-1 mb-3 mt-1.5  md:ml-3 ;
+}
+tbody .equipos {
+  /* CONTAINS THE NAME OF THE TEAMS */
+  @apply w-[42rem] ml-1  h-min border-r-[0.5rem] border-r-[white] border-solid sm:border-r-2 md:w-96 md:border-r-[1.5rem] ;
+  /* The gap between the teams and the scores */
+}
+h6 {
+    /* for the text to be aligned with the img */
+  @apply text-left relative top-[-33px] text-xs font-bold left-7 -mb-6 sm:left-9 sm:text-[9.5px] md:text-[1rem] md:left-12 ;
+}
+.pj,
+.puntos,
+.g,
+.e,
+
+.p {
+  @apply w-24 text-xs font-bold sm:text-[0.9rem] md:w-16;
+}
+.custom-button {
+  @apply absolute w-14 border-[none] top-2 sm:w-14;
+  background: none;
+}
+.container {
+  @apply flex pt-10  justify-center items-center ;
+}
+.contenedor-blanco {
+  @apply bg-[white] max-w-[90%] h-full mt-[0.5rem] mb-96 p-2 rounded-2xl md:mb-[45rem] lg:mb-[1rem] lg:p-4;
+}
+.encabezado {
+  @apply flex justify-center mb-[10px];
+}
+.logo {
+  @apply w-28 mr-3 mt-2.5 -mb-1.5 ml-1.5 sm:ml-[2px] sm:h-12 sm:mr-1 sm:mb-[-10px] sm:w-32 md:w-44 md:mr-3 md:h-14 md:-mb-4 lg:w-44;
+}
+.titulo {
+  /* AMIGOS DE LUIS */
+  @apply text-2xl text-right font-bold mt-4 md:text-[2rem] md:mt-5 lg:text-4xl lg:mt-3;
+} 
+.contenedor-blanco table {
+  /* Space between fields */
+  @apply w-full border-spacing-y-1 border-spacing-x-0.5 bg-[white] border-separate sm:border-spacing-y-1 sm:border-spacing-x-1;
+}
+th {
+  /* headers of the columns PTS,PJ, G, E, P */
+  @apply text-xs text-center font-bold sm:text-[0.8rem]  xl:text-sm;
+}
+td {
+  /* rows */
+  @apply bg-[#e6e6e6] text-center;
+}

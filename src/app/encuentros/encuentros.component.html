@@ -1,57 +1,126 @@
-<main>
-    <div>
-        <i class="bi bi-arrow-left icon"></i>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="output-encuentros.component.css">
+</head>
+<body>
+    <div class="">
+        <button class="button">
+        <img src="../assets/escudosEquipos/flecha.png" alt="Botón Flecha apuntando a la izquierda"> 
+        </button>
     </div>
     <div class="card">
-            <header class="card-title">
-                <div class="logo-torneo">
-                    <img src="./escudosEquipos/logotorneo.png" alt="Logo del torneo" class="logotorneo">
-                </div>
-                <div class="title-text">
-                    <span class="title">NACIONAL AMATEUR</span>
-                    <p>fecha 18-08</p>
-                </div>
-            </header>
-
-            
-            <div class="Cuartos">
-                <div class="titulos">
-                    <h3>CUARTOS DE FINAL</h3>
-                </div>
-                <app-versus
-                *ngFor="let team of versusList.cuartosFinal"
-                [team1]="team.equipo1.nameteam" [team2]="team.equipo2.nameteam" [escudoTeam1]="team.equipo1.escudo" [escudoTeam2]="team.equipo2.escudo">
-                </app-versus>
+        <header class="card-title">
+            <div class="logo-torneo">
+                <img src="../assets/recursosimg/trofeo.png" alt="Logo del torneo" class="logotorneo">
             </div>
-
-            <div class="Semifinales">
-                <div class="titulos">
-                    <h3>SEMIFINAL</h3>
-                </div>
-                    <app-versus
-                    *ngFor="let team of versusList.semifinal"
-                    [team1]="team.equipo1.nameteam" [team2]="team.equipo2.nameteam" [escudoTeam1]="team.equipo1.escudo" [escudoTeam2]="team.equipo2.escudo">
-                    </app-versus>
+            <div class="title-text">
+                <span class="title">NACIONAL AMATEUR</span>
+                <p>Fecha: Enero-03</p>
             </div>
-
-            <div class="Final">
-                <div class="titulos">
-                    <h3>FINAL</h3>
+        </header>
+        <div class="Cuartos">
+            <div class="titulos">
+                <h3>CUARTOS DE FINAL</h3>
+                <div class="bigbox"> 
+                    <div class="box-left">  
+                        <img src="../assets/escudosEquipos/millonarios.png" alt="Logo deportes millonarios">
+                        <h6>MILLONARIOS</h6>
+                    </div>
+                    <div class="versus"> VS </div>
+                    <div class="box-right">  
+                        <img src="../assets/escudosEquipos/jaguares.png" alt="Logo Jaguares">
+                        <h6>JAGUARES</h6>
+                    </div>
                 </div>
-                <app-versus
-                    *ngFor="let team of versusList.final"
-                    [team1]="team.equipo1.nameteam" [team2]="team.equipo2.nameteam" [escudoTeam1]="team.equipo1.escudo" [escudoTeam2]="team.equipo2.escudo">
-                </app-versus>
-            </div>
-
-            <div class="Campeon">
-                <div class="titulos">
-                    <h3>CAMPEÓN</h3>
+                <div class="bigbox"> 
+                    <div class="box-left">  
+                        <img src="../assets/escudosEquipos/nacional.png" alt="Logo nacional">
+                        <h6>NACIONAL</h6>
+                    </div>
+                    <div class="versus"> VS</div>
+                    <div class="box-right">  
+                        <img src="../assets/escudosEquipos/america.png" alt="Logo America">
+                        <h6>AMERICA</h6>
+                    </div>
                 </div>
-                <!-- <app-campeon
-                    *ngFor="let team of versusList.campeon"
-                    [team1]="team.equipo1.nameteam" [escudoTeam1]="team.equipo1.escudo">
-                </app-campeon> -->
+                <div class="bigbox"> 
+                    <div class="box-left">  
+                        <img src="../assets/escudosEquipos/santafe.png" alt="Logo santafe">
+                        <h6>SANTAFE</h6>
+                    </div>
+                    <div class="versus"> VS </div>
+                    <div class="box-right">  
+                        <img src="../assets/escudosEquipos/tolima.png" alt="Logo tolima">
+                        <h6>TOLIMA</h6>
+                    </div>
+                </div>
+                <div class="bigbox"> 
+                    <div class="box-left">  
+                        <img src="../assets/escudosEquipos/pereira.png" alt="Logo deportes PEREIRA">
+                        <h6>PEREIRA</h6>
+                    </div>
+                    <div class="versus"> VS </div>
+                    <div class="box-right">  
+                        <img src="../assets/escudosEquipos/junior.png" alt="Logo Junior">
+                        <h6>JUNIOR</h6>
+                    </div>
+                </div>
             </div>
+        </div>
+        <div class="semifinales"> 
+            <h3>SEMIFINAL</h3>
+            <div class="bigbox"> 
+                <div class="box-left">  
+                    <img src="../assets/escudosEquipos/millonarios.png" alt="Logo deportes millonarios">
+                    <h6>MILLONARIOS</h6>
+                </div>
+                <div class="versus"> VS </div>
+                <div class="box-right">  
+                    <img src="../assets/escudosEquipos/jaguares.png" alt="Logo Jaguares">
+                    <h6>JAGUARES</h6>
+                </div>
+            </div>
+            <div class="bigbox"> 
+                <div class="box-left">  
+                    <img src="../assets/escudosEquipos/nacional.png" alt="Logo nacional">
+                    <h6>NACIONAL</h6>
+                </div>
+                <div class="versus"> VS</div>
+                <div class="box-right">  
+                    <img src="../assets/escudosEquipos/america.png" alt="Logo America">
+                    <h6>AMERICA</h6>
+                </div>
+            </div>
+        </div>
+        <div class="final">
+            <h3>FINAL</h3>
+            <div class="bigbox"> 
+                <div class="box-left">  
+                    <img src="../assets/escudosEquipos/millonarios.png" alt="Logo deportes millonarios">
+                    <h6>MILLONARIOS</h6>
+                </div>
+                <div class="versus"> VS </div>
+                <div class="box-right">  
+                    <img src="../assets/escudosEquipos/jaguares.png" alt="Logo Jaguares">
+                    <h6>JAGUARES</h6>
+                </div>
+            </div>
+        </div>
+        <div class="campeon">
+            <h3>CAMPEÓN</h3>
+            <div class="box-campeon">  
+                <img src="../assets/escudosEquipos/millonarios.png" alt="Logo deportes millonarios">
+                <h6>MILLONARIOS</h6>
+            </div>
+        </div>
     </div>
-</main>
+</body>
+</html>
+<!-- ALWAYS NEED TO RUN THE FOLLOWING COMMAND: 
+    npm run dev
+    dev is the name assigned in the file 'package.json'
+ -->
