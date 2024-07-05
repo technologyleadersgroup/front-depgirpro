@@ -1,57 +1,125 @@
-<main>
-    <div>
-        <i class="bi bi-arrow-left icon"></i>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body class="bg-fondo1 bg-cover bg-no-repeat bg-fixed flex h-full justify-center items-center m-0">
+    <div class="">
+        <button class="absolute w-10 border-[none] top-2 md:w-24 md:top-4 lg:w-16">
+        <img src="../assets/escudosEquipos/flecha.png" alt="Botón Flecha apuntando a la izquierda"> 
+        </button>
     </div>
-    <div class="card">
-            <header class="card-title">
-                <div class="logo-torneo">
-                    <img src="./recursosEncuentros/logotorneo.png" alt="Logo del torneo" class="logotorneo">
-                </div>
-                <div class="title-text">
-                    <span class="title">NACIONAL AMATEUR</span>
-                    <p>fecha 18-08</p>
-                </div>
-            </header>
-
-            
-            <div class="Cuartos">
-                <div class="titulos">
-                    <h3>CUARTOS DE FINAL</h3>
-                </div>
-                <app-versus
-                *ngFor="let team of versusList.cuartosFinal"
-                [team1]="team.equipo1.nameteam" [team2]="team.equipo2.nameteam" [escudoTeam1]="team.equipo1.escudo" [escudoTeam2]="team.equipo2.escudo">
-                </app-versus>
+    <div class="bg-[white] max-w-[90%] max-h-[90%] px-3 rounded-2xl h-full mt-[2.9rem] mb-3 md:mt-28 md:max-h-[88%] lg:mt-20 lg:px-6 lg:mb-6">
+        <header class="flex flex-row mt-2 mb-3 content-center md:mb-6 md:mt-3">
+            <div class="h-10 w-14 mr-1 md:w-24 md:h-20 md:mx-2 lg:w-18">
+                <img src="../assets/recursosimg/trofeo.png" alt="Logo del torneo" class="lg:w-[full]">
             </div>
-
-            <div class="Semifinales">
-                <div class="titulos">
-                    <h3>SEMIFINAL</h3>
-                </div>
-                    <app-versus
-                    *ngFor="let team of versusList.semifinal"
-                    [team1]="team.equipo1.nameteam" [team2]="team.equipo2.nameteam" [escudoTeam1]="team.equipo1.escudo" [escudoTeam2]="team.equipo2.escudo">
-                    </app-versus>
+            <div class="title-text">
+                <span class="text-[1.6rem] font-bold md:text-[3.5rem] lg:text-[3.7rem]">NACIONAL AMATEUR</span>
+                <p class="text-base font-semibold md:text-[1.5rem]">Fecha: Enero-03</p>
             </div>
-
-            <div class="Final">
-                <div class="titulos">
-                    <h3>FINAL</h3>
+        </header>
+        <div class="Cuartos">
+            <div class="titulos">
+                <h3 class="text-xl font-bold text-center m-1.5 md:text-[2.5rem] md:mt-[3rem] md:m-[2rem]">CUARTOS DE FINAL</h3>
+                <div class="flex flex-row content-between"> 
+                    <div class="flex flex-row w-80 h-10 mr-4 p-2 bg-gradient-to-r from-gray-200 to-white rounded-br-full mb-1 md:h-[5rem]">  
+                        <img src="../assets/escudosEquipos/millonarios.png" alt="Logo deportes millonarios" class=" w-5 h-6 md:w-10 md:h-12 md:mx-1 md:mt-2 lg:mx-1.5">
+                        <h6 class="font-semibold ml-0.5 place-content-center md:text-[1.8rem]">MILLONARIOS</h6>
+                    </div>
+                    <div class="bg-white w-10 h-10 text-center place-content-center font-extrabold font-serif md:w-10 md:h-12 md:text-[2rem]"> VS </div>
+                    <div class="flex flex-row-reverse w-80 h-10 ml-4 p-2 bg-gradient-to-l from-gray-200 to-white rounded-tl-full mb-1 md:h-[5rem]">  
+                        <img src="../assets/escudosEquipos/jaguares.png" alt="Logo Jaguares" class="w-5 h-6 md:w-10 md:h-12 md:mx-1 md:mt-2 lg:mx-1.5">
+                        <h6 class="font-semibold mr-0.5 place-content-center md:text-[1.8rem]">JAGUARES</h6>
+                    </div>
                 </div>
-                <app-versus
-                    *ngFor="let team of versusList.final"
-                    [team1]="team.equipo1.nameteam" [team2]="team.equipo2.nameteam" [escudoTeam1]="team.equipo1.escudo" [escudoTeam2]="team.equipo2.escudo">
-                </app-versus>
-            </div>
-
-            <div class="Campeon">
-                <div class="titulos">
-                    <h3>CAMPEÓN</h3>
+                <div class="flex flex-row content-between place-content-center"> 
+                    <div class="flex flex-row w-80 h-10 mr-4 p-2 bg-gradient-to-r from-gray-200 to-white rounded-br-full mb-1 md:h-[5rem]">  
+                        <img src="../assets/escudosEquipos/nacional.png" alt="Logo nacional" class="w-5 h-6 md:w-10 md:h-12 md:mx-1 md:mt-2 lg:mx-1.5">
+                        <h6 class="font-semibold ml-0.5 place-content-center md:text-[1.8rem]">NACIONAL</h6>
+                    </div>
+                    <div class="bg-white w-10 h-10 text-center place-content-center font-extrabold font-serif md:w-10 md:h-12 md:text-[2rem]"> VS</div>
+                    <div class="flex flex-row-reverse w-80 h-10  ml-4 p-2 bg-gradient-to-l from-gray-200 to-white rounded-tl-full md:h-[5rem]	">  
+                        <img src="../assets/escudosEquipos/america.png" alt="Logo America" class="w-5 h-6 md:w-10 md:h-12 md:mx-1 md:mt-2 lg:mx-1.5">
+                        <h6 class="font-semibold mr-0.5 place-content-center md:text-[1.8rem]">AMERICA</h6>
+                    </div>
                 </div>
-                <app-campeon
-                    *ngFor="let team of versusList.campeon"
-                    [team1]="team.equipo1.nameteam" [escudoTeam1]="team.equipo1.escudo">
-                </app-campeon>
+                <div class="flex flex-row content-between place-content-center"> 
+                    <div class="flex flex-row w-80 h-10 mr-4 p-2 bg-gradient-to-r from-gray-200 to-white rounded-br-full mb-1 md:h-[5rem]">  
+                        <img src="../assets/escudosEquipos/santafe.png" alt="Logo santafe" class="w-5 h-6 md:w-10 md:h-12 md:mx-1 md:mt-2 lg:mx-1.5">
+                        <h6 class="font-semibold ml-0.5 place-content-center md:text-[1.8rem]">SANTAFE</h6>
+                    </div>
+                    <div class="bg-white w-10 h-10 text-center place-content-center font-extrabold font-serif md:w-10 md:h-12 md:text-[2rem]"> VS </div>
+                    <div class="flex flex-row-reverse w-80 h-10 ml-4 p-2 bg-gradient-to-l from-gray-200 to-white rounded-tl-full mb-1 md:h-[5rem]">  
+                        <img src="../assets/escudosEquipos/tolima.png" alt="Logo tolima" class="w-5 h-6 md:w-10 md:h-12 md:mx-1 md:mt-2 lg:mx-1.5">
+                        <h6 class="font-semibold mr-0.5 place-content-center md:text-[1.8rem]">TOLIMA</h6>
+                    </div>
+                </div>
+                <div class="flex flex-row content-between place-content-center"> 
+                    <div class="flex flex-row w-80 h-10 mr-4 p-2 bg-gradient-to-r from-gray-200 to-white rounded-br-full mb-1 md:h-[5rem]">  
+                        <img src="../assets/escudosEquipos/pereira.png" alt="Logo deportes PEREIRA" class="w-5 h-6 md:w-10 md:h-12 md:mt-2 md:mx-1 lg:mx-1.5">
+                        <h6 class="font-semibold ml-0.5 place-content-center md:text-[1.8rem]">PEREIRA</h6>
+                    </div>
+                    <div class="bg-white w-10 h-10 text-center place-content-center font-extrabold font-serif md:w-10 md:h-12 md:text-[2rem]"> VS </div>
+                    <div class="flex flex-row-reverse w-80 h-10 ml-4 p-2 bg-gradient-to-l from-gray-200 to-white rounded-tl-full mb-1 md:h-[5rem]">  
+                        <img src="../assets/escudosEquipos/junior.png" alt="Logo Junior" class="w-5 h-6 md:w-10 md:h-12 md:mx-1 md:mt-2 lg:mx-1.5">
+                        <h6 class="font-semibold mr-0.5 place-content-center md:text-[1.8rem]">JUNIOR</h6>
+                    </div>
+                </div>
             </div>
+        </div>
+        <div class="semifinales"> 
+            <h3 class="text-xl font-bold text-center m-1.5 md:text-[2.5rem] md:m-[2rem]">SEMIFINAL</h3>
+            <div class="flex flex-row content-between place-content-center"> 
+                <div class="flex flex-row w-80 h-10 mr-4 p-2 bg-gradient-to-r from-gray-200 to-white rounded-br-full mb-1 md:h-[5rem]">  
+                    <img src="../assets/escudosEquipos/millonarios.png" alt="Logo deportes millonarios" class="w-5 h-6 md:w-10 md:h-12 md:mt-2 md:mx-1 lg:mx-1.5">
+                    <h6 class="font-semibold ml-0.5 place-content-center md:text-[1.8rem]">MILLONARIOS</h6>
+                </div>
+                <div class="bg-white w-10 h-10 text-center place-content-center font-extrabold font-serif md:w-10 md:h-12  md:text-[2rem]"> VS </div>
+                <div class="flex flex-row-reverse w-80 h-10 ml-4 p-2 bg-gradient-to-l from-gray-200 to-white rounded-tl-full mb-1 md:h-[5rem]">  
+                    <img src="../assets/escudosEquipos/jaguares.png" alt="Logo Jaguares" class="w-5 h-6 md:w-10 md:h-12 md:mx-1 md:mt-2 lg:mx-1.5">
+                    <h6 class="font-semibold mr-0.5 place-content-center md:text-[1.8rem]">JAGUARES</h6>
+                </div>
+            </div>
+            <div class="flex flex-row content-between place-content-center"> 
+                <div class="flex flex-row w-80 h-10 mr-4 p-2 bg-gradient-to-r from-gray-200 to-white rounded-br-full mb-1 md:h-[5rem]">  
+                    <img src="../assets/escudosEquipos/nacional.png" alt="Logo nacional" class="w-5 h-6 md:w-10 md:h-12 md:mx-1 md:mt-2 lg:mx-1.5">
+                    <h6 class="font-semibold ml-0.5 place-content-center md:text-[1.8rem]">NACIONAL</h6>
+                </div>
+                <div class="bg-white w-10 h-10 text-center place-content-center font-extrabold font-serif md:w-10 md:h-12  md:text-[2rem]"> VS</div>
+                <div class="flex flex-row-reverse w-80 h-10 ml-4 p-2 bg-gradient-to-l from-gray-200 to-white rounded-tl-full mb-1 md:h-[5rem]">  
+                    <img src="../assets/escudosEquipos/america.png" alt="Logo America" class="w-5 h-6 md:w-10 md:h-12 md:mx-1 md:mt-2 lg:mx-1.5">
+                    <h6 class="font-semibold mr-0.5 place-content-center md:text-[1.8rem]">AMERICA</h6>
+                </div>
+            </div>
+        </div>
+        <div class="final">
+            <h3 class="text-xl font-bold text-center m-1.5 md:text-[2.5rem] md:m-[2rem]">FINAL</h3>
+            <div class="flex flex-row content-between place-content-center"> 
+                <div class="flex flex-row w-80 h-10 mr-4 p-2 bg-gradient-to-r from-gray-200 to-white rounded-br-full mb-1 md:h-[5rem]">  
+                    <img src="../assets/escudosEquipos/millonarios.png" alt="Logo deportes millonarios" class="w-5 h-6 md:w-10 md:h-12 md:mx-1 md:mt-2 lg:mx-1.5">
+                    <h6 class="font-semibold ml-0.5 place-content-center md:text-[1.8rem]">MILLONARIOS</h6>
+                </div>
+                <div class="bg-white w-10 h-10 text-center place-content-center font-extrabold font-serif md:w-10 md:h-12  md:text-[2rem]"> VS </div>
+                <div class="flex flex-row-reverse w-80 h-10 ml-4 p-2 bg-gradient-to-l from-gray-200 to-white rounded-tl-full mb-1 md:h-[5rem]">  
+                    <img src="../assets/escudosEquipos/jaguares.png" alt="Logo Jaguares" class="w-5 h-6 md:w-10 md:h-12 md:mx-1 md:mt-2 lg:mx-1.5">
+                    <h6 class="font-semibold mr-0.5 place-content-center md:text-[1.8rem]">JAGUARES</h6>
+                </div>
+            </div>
+        </div>
+        <div class="align-middle justify-center place-content-center text-center">
+            <h3 class="text-xl font-bold text-center m-1.5 md:text-[2.5rem] md:m-[2rem]">CAMPEÓN</h3>
+            <div class="flex justify-center h-10 mx-1 mb-3 p-2 bg-gray-200 rounded-br-full rounded-tl-full md:w-96 md:h-[5rem] md:ml-[10rem] md:mb-[1.5rem]">  
+                <img src="../assets/escudosEquipos/millonarios.png" alt="Logo deportes millonarios" class="w-5 h-6  md:w-10 md:h-12 md:mt-2 lg:mx-1.5">
+                <h6 class="font-semibold ml-0.5 place-content-center md:text-[1.8rem]">MILLONARIOS</h6>
+            </div>
+        </div>
     </div>
-</main>
+</body>
+</html>
+<!-- ALWAYS NEED TO RUN THE FOLLOWING COMMAND: 
+    npm run dev
+    dev is the name assigned in the file 'package.json'
+ -->

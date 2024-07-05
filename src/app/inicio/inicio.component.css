@@ -14,116 +14,13 @@ body {
     background-attachment: fixed;
 }
 
-/* .encabezado1 {
-    position: absolute;
-    top: 10px;
-    left: 300px;
-    width: 200px;
-    height: auto;
-}
-
-.encabezado2 {
-    position: absolute;
-    top: 25px;
-    right: 300px;
-    width: 50px;
-    height: auto;
-} */
-
-.titulo {
-    text-align: center;
-    color: #fff;
-    font-size: 50px;
-}
-
-.button-column {
-    flex: 0 0 calc(10% - 20px);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.button {
-    margin: 10px 0;
-}
-
-main {
-    padding-top: 65px;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-.button {
-    position: relative;
-    width: 80px;
-    height: 170px;
-    margin: 0px;
-    background-color: rgba(0, 0, 0, 0.7);
-    border: none;
-    border-radius: 0px;
-    color: #fff;
-}
-
-.button-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
-    position: relative;
-}
-
-.button {
-    width: 100%;
-}
 
 
-/*
-.button-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
-    position: relative;
-    z-index: 1;
-}
-*/
 
-.button-title {
-    position: absolute;
-    top: 5px;
-    left: 5px;
-    font-size: 30px;
-}
 
-.button-image {
-    position: absolute;
-    bottom: 5px;
-    right: 5px;
-}
-
-.button-image img {
-    max-width: 100px;
-    max-height: 100px;
-}
-
-footer {
-    text-align: center;
-}
-
-.tlg img {
-    display: inline-block;
-    vertical-align: middle;
-    max-width: 15%;
-    margin: 10px auto;
-}
-
-.tlg {
-    max-width: 100%;
-}
 
 @media (max-width: 768px) {
-    .button-container {
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 5px;
-    }
+
     body {
         background-image: url('Fondo Azul y Amarillo.png');
         background-size: cover;
@@ -133,78 +30,5 @@ footer {
         font-family: 'Roboto', sans-serif;
         font-style: italic;
         margin: 0;
-    }
-    .encabezado1 {
-        position: absolute;
-        top: 20px;
-        left: 50px;
-        width: 80px;
-        height: auto;
-    }
-    .encabezado2 {
-        position: absolute;
-        top: 20px;
-        right: 50px;
-        width: 30px;
-        height: auto;
-    }
-    .titulo {
-        text-align: center;
-        color: #fff;
-        font-size: 30px;
-    }
-    .button-column {
-        flex: 0 0 calc(10% - 20px);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .button {
-        margin: 10px 0;
-    }
-    main {
-        padding-top: 55px;
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-    .button {
-        position: relative;
-        width: 80px;
-        height: 100px;
-        margin: 0px;
-        background-color: rgba(0, 0, 0, 0.7);
-        border: none;
-        border-radius: 0px;
-        color: #fff;
-    }
-    .button {
-        width: 100%;
-    }
-    .button-title {
-        position: absolute;
-        top: 5px;
-        left: 5px;
-        font-size: 10px;
-    }
-    .button-image {
-        position: absolute;
-        bottom: 5px;
-        right: 5px;
-    }
-    .button-image img {
-        max-width: 50px;
-        max-height: 50px;
-    }
-    footer {
-        text-align: center;
-    }
-    .tlg img {
-        display: inline-block;
-        vertical-align: middle;
-        max-width: 20%;
-        margin: 10px auto;
-    }
-    .tlg {
-        max-width: 100%;
     }
 }

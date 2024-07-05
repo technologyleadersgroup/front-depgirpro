@@ -10,41 +10,41 @@ export class EncuentrosComponent {
   versusList= {
     cuartosFinal:[
       {
-        equipo1:{nameteam:"DEPORTES TOLIMA", escudo:"./recursosEncuentros/tolima.png"}, 
-        equipo2:{nameteam:"AMERICA", escudo:"./recursosEncuentros/america.png"}
+        equipo1:{nameteam:"DEPORTES TOLIMA", escudo:"./escudosEquipos/tolima.png"}, 
+        equipo2:{nameteam:"AMERICA", escudo:"./escudosEquipos/america.png"}
       },
       {
-        equipo1:{nameteam:"INDEPENDIENTE SANTA FE", escudo:"./recursosEncuentros/santafe.png"}, 
-        equipo2:{nameteam:"JUNIOR", escudo:"./recursosEncuentros/junior.png"}
+        equipo1:{nameteam:"INDEPENDIENTE SANTA FE", escudo:"./escudosEquipos/santafe.png"}, 
+        equipo2:{nameteam:"JUNIOR", escudo:"./escudosEquipos/junior.png"}
       },
       {
-        equipo1:{nameteam:"JAGUARES", escudo:"./recursosEncuentros/jaguares.png"}, 
-        equipo2:{nameteam:"ATLETICO NACIONAL", escudo:"./recursosEncuentros/nacional.png"}
+        equipo1:{nameteam:"JAGUARES", escudo:"./escudosEquipos/jaguares.png"}, 
+        equipo2:{nameteam:"ATLETICO NACIONAL", escudo:"./escudosEquipos/nacional.png"}
       },
       {
-        equipo1:{nameteam:"MILLONARIOS", escudo:"./recursosEncuentros/millonarios.png"}, 
-        equipo2:{nameteam:"PEREIRA", escudo:"./recursosEncuentros/pereira.png"}
+        equipo1:{nameteam:"MILLONARIOS", escudo:"./escudosEquipos/millonarios.png"}, 
+        equipo2:{nameteam:"PEREIRA", escudo:"./escudosEquipos/pereira.png"}
       }
     ],
     semifinal:[
       {
-        equipo1:{nameteam:"DEPORTES TOLIMA", escudo:"./recursosEncuentros/tolima.png"}, 
-        equipo2:{nameteam:"ATLETICO NACIONAL", escudo:"./recursosEncuentros/nacional.png"}
+        equipo1:{nameteam:"DEPORTES TOLIMA", escudo:"./escudosEquipos/tolima.png"}, 
+        equipo2:{nameteam:"ATLETICO NACIONAL", escudo:"./escudosEquipos/nacional.png"}
       },
       {
-        equipo1:{nameteam:"INDEPENDIENTE SANTA FE", escudo:"./recursosEncuentros/santafe.png"}, 
-        equipo2:{nameteam:"MILLONARIOS", escudo:"./recursosEncuentros/millonarios.png"}
+        equipo1:{nameteam:"INDEPENDIENTE SANTA FE", escudo:"./escudosEquipos/santafe.png"}, 
+        equipo2:{nameteam:"MILLONARIOS", escudo:"./escudosEquipos/millonarios.png"}
       }
     ],
     final:[
       {
-        equipo1:{nameteam:"DEPORTES TOLIMA", escudo:"tolima.png"}, 
-        equipo2:{nameteam:"INDEPENDIENTE SANTA FE", escudo:"santafe.png"}
+        equipo1:{nameteam:"DEPORTES TOLIMA", escudo:"./escudosEquipos/tolima.png"}, 
+        equipo2:{nameteam:"INDEPENDIENTE SANTA FE", escudo:"./escudosEquipos/santafe.png"}
       }
     ],
     campeon:[
       {
-        equipo1:{nameteam:"DEPORTES TOLIMA", escudo:"tolima.png"}
+        equipo1:{nameteam:"DEPORTES TOLIMA", escudo:"./escudosEquipos/tolima.png"}
       }
     ]
 }
